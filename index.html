@@ -1,11 +1,527 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <title>Refined Art Solutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refined Art Solutions | Luxury Event Decor, Mirror Photo Zones & Photo Booths</title>
+    <meta name="description" content="Saint Lucia's premier experiential event design studio specializing in immersive infinity mirror photo zones, interactive RGB photo booths, and bespoke balloon decor.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Typography -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        
+        .font-luxury { font-family: 'Cinzel', serif; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        
+        /* 60-30-10 Color Architecture */
+        :root {
+            --bg-obsidian: #07090E;
+            --bg-surface: #0F172A;
+            --accent-gold: #D4AF37;
+            --accent-gold-hover: #F59E0B;
+        }
+
+        .gold-glow {
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+        }
+    </style>
 </head>
-<body style="background:#0b0f17;color:#fff;font-family:sans-serif;padding:40px;text-align:center;">
-  <h1>Refined Art Solutions</h1>
-  <p>Event Decor • Mirror Photo Zone Rental • Photo Booth Rental</p>
+<body class="bg-[#07090E] text-slate-100 antialiased selection:bg-[#D4AF37] selection:text-[#07090E]">
+
+    <!-- VIP Priority Ribbon -->
+    <div class="bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] text-[#07090E] text-[11px] sm:text-xs font-bold py-2.5 px-4 text-center tracking-widest uppercase">
+        ✨ Saint Lucia's Premier Experiential Event Studio • Bookings Open for Corporate Galas, Weddings & VIP Celebrations
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="sticky top-0 z-50 bg-[#07090E]/95 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#D4AF37] to-[#996515] text-[#07090E] flex items-center justify-center font-luxury font-bold text-xl shadow-lg">
+                    R
+                </div>
+                <div>
+                    <span class="font-luxury text-lg sm:text-xl font-bold tracking-wider text-white block">Refined Art Solutions</span>
+                    <span class="text-[9px] uppercase tracking-[0.25em] text-[#D4AF37] font-bold block -mt-0.5">Saint Lucia • Luxury Events</span>
+                </div>
+            </a>
+
+            <!-- Read Order Navigation -->
+            <div class="hidden lg:flex items-center gap-8 text-xs uppercase tracking-widest font-semibold text-slate-400">
+                <a href="#services" class="hover:text-[#D4AF37] transition">Signature Services</a>
+                <a href="#portfolio" class="hover:text-[#D4AF37] transition">Live Portfolio</a>
+                <a href="#pricing" class="hover:text-[#D4AF37] transition">Packages</a>
+                <a href="#estimator" class="hover:text-[#D4AF37] transition">Quote Calculator</a>
+                <a href="#contact" class="hover:text-[#D4AF37] transition">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="https://instagram.com/refinedartsolutions" target="_blank" class="w-10 h-10 rounded-full bg-slate-800/80 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-[#D4AF37] hover:border-[#D4AF37] transition">
+                    <i class="fa-brands fa-instagram text-base"></i>
+                </a>
+                <a href="#book" class="bg-[#D4AF37] hover:bg-[#F59E0B] text-[#07090E] font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-full shadow-lg transition flex items-center gap-2">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Reserve Date</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-16 pb-24 lg:pt-28 lg:pb-36 overflow-hidden bg-gradient-to-b from-[#0F172A]/40 via-[#07090E] to-[#07090E]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content: High Contrast & Read Hierarchy -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-[#D4AF37]/40 text-[#D4AF37] text-xs font-semibold tracking-wider">
+                        <i class="fa-solid fa-star text-xs"></i>
+                        <span>Elevating Celebrations Across Saint Lucia</span>
+                    </div>
+
+                    <h1 class="font-luxury text-4xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.08] tracking-tight">
+                        Transforming Moments Into <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-[#FFF3B0] to-[#D4AF37]">Living Art.</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-xl font-normal">
+                        Refined Art Solutions engineers bespoke visual spectacles. From one-of-a-kind **Infinity Mirror Photo Zones** and **Interactive RGB Photo Booths** to high-impact **Corporate & Social Event Decor**, we ensure your guests never stop talking about your event.
+                    </p>
+
+                    <!-- Tactile CTAs (No Ghost Buttons) -->
+                    <div class="pt-2 flex flex-col sm:flex-row gap-4">
+                        <a href="#book" class="bg-[#D4AF37] hover:bg-[#F59E0B] text-[#07090E] font-extrabold text-xs uppercase tracking-widest px-8 py-4 rounded-xl shadow-xl transition flex items-center justify-center gap-2">
+                            <span>Check Date Availability</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="https://wa.me/17584848565?text=Hello%20Refined%20Art%20Solutions,%20I%20would%20like%20to%20inquire%20about%20booking%20an%20experiential%20photo%20zone/decor." target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-xl shadow-md transition flex items-center justify-center gap-2 border border-slate-700">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
+                            <span>Instant WhatsApp Quote</span>
+                        </a>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800/80">
+                        <div>
+                            <div class="text-xl sm:text-2xl font-bold text-white font-luxury">100%</div>
+                            <div class="text-[11px] text-slate-500 uppercase tracking-wider font-semibold">Custom Built Themes</div>
+                        </div>
+                        <div>
+                            <div class="text-xl sm:text-2xl font-bold text-[#D4AF37] font-luxury">VIP</div>
+                            <div class="text-[11px] text-slate-500 uppercase tracking-wider font-semibold">Corporate & Galas</div>
+                        </div>
+                        <div>
+                            <div class="text-xl sm:text-2xl font-bold text-white font-luxury">4K HD</div>
+                            <div class="text-[11px] text-slate-500 uppercase tracking-wider font-semibold">Live Social Sharing</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Feature Image -->
+                <div class="lg:col-span-5 relative">
+                    <div class="rounded-3xl overflow-hidden border-2 border-[#D4AF37]/30 shadow-2xl bg-slate-900 aspect-[4/5] relative">
+                        <img src="images/mirror-glam-couple.jpg" alt="Refined Art Solutions Luxury Mirror Zone" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#07090E] via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-slate-900/90 backdrop-blur-md border border-slate-800">
+                            <span class="text-[10px] uppercase font-bold text-[#D4AF37] tracking-wider block">Featured Installation</span>
+                            <h4 class="text-sm font-bold text-white">Glitter & Glam Infinity Mirror Room</h4>
+                            <p class="text-xs text-slate-400 mt-1">Full 360-degree reflection chamber with custom neon branding and disco spheres.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Overview (The 3 Core Pillars) -->
+    <section id="services" class="py-24 bg-[#0B1120] border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
+                <span class="text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Experiential Services</span>
+                <h2 class="font-luxury text-3xl sm:text-4xl font-bold text-white">Curated For High-End Impact</h2>
+                <p class="text-slate-400 text-xs sm:text-sm">Engineered to deliver memorable visual experiences that engage guests and elevate brand presence.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Service 1: Mirror Photo Zone -->
+                <div class="bg-slate-900/90 rounded-3xl p-8 border border-slate-800 hover:border-[#D4AF37]/50 transition duration-300 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-[#D4AF37]/10 text-[#D4AF37] flex items-center justify-center text-2xl border border-[#D4AF37]/30">
+                            <i class="fa-solid fa-cube"></i>
+                        </div>
+                        <h3 class="font-luxury text-xl font-bold text-white">Mirror Photo Zone Rental</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Our proprietary **Infinity Mirror Box**. An enclosed reflection portal featuring multi-angle mirrors, customizable neon typography, branded balloon arches, and integrated LED tube illumination.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2 pt-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Corporate branding & logos</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Theme-specific internal decor</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Professional delivery & setup</li>
+                        </ul>
+                    </div>
+                    <a href="#book" class="w-full py-3 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold uppercase tracking-wider text-center rounded-xl transition border border-slate-700">
+                        Inquire Mirror Zone
+                    </a>
+                </div>
+
+                <!-- Service 2: Interactive Photo Booth -->
+                <div class="bg-slate-900/90 rounded-3xl p-8 border border-slate-800 hover:border-[#D4AF37]/50 transition duration-300 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-[#D4AF37]/10 text-[#D4AF37] flex items-center justify-center text-2xl border border-[#D4AF37]/30">
+                            <i class="fa-solid fa-camera-retro"></i>
+                        </div>
+                        <h3 class="font-luxury text-xl font-bold text-white">Interactive Photo Booth Rental</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Sleek, freestanding dual-kiosk photo stations equipped with animated RGB color-chasing ring lights, high-resolution cameras, and instant digital delivery via QR, SMS, and AirDrop.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2 pt-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Instant digital & print options</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Custom animated overlays & frames</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Live attendant on-site</li>
+                        </ul>
+                    </div>
+                    <a href="#book" class="w-full py-3 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold uppercase tracking-wider text-center rounded-xl transition border border-slate-700">
+                        Inquire Photo Booth
+                    </a>
+                </div>
+
+                <!-- Service 3: Event Decor -->
+                <div class="bg-slate-900/90 rounded-3xl p-8 border border-slate-800 hover:border-[#D4AF37]/50 transition duration-300 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-[#D4AF37]/10 text-[#D4AF37] flex items-center justify-center text-2xl border border-[#D4AF37]/30">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="font-luxury text-xl font-bold text-white">Bespoke Event Decor</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Full-scale venue styling for luxury galas, awards ceremonies, baby showers, and milestone birthdays. Includes organic balloon installations, stage backdrops, and lavish table scapes.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2 pt-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Organic balloon walls & garlands</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Corporate stage & podium backdrops</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Coordinated table & floral styling</li>
+                        </ul>
+                    </div>
+                    <a href="#book" class="w-full py-3 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold uppercase tracking-wider text-center rounded-xl transition border border-slate-700">
+                        Inquire Event Decor
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Portfolio Gallery -->
+    <section id="portfolio" class="py-24 bg-[#07090E] border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Visual Excellence</span>
+                    <h2 class="font-luxury text-3xl sm:text-5xl font-bold text-white mt-2">Recent Client Installations</h2>
+                </div>
+                <p class="text-slate-400 text-xs max-w-md">
+                    Explore real photos from high-profile galas, corporate branding events, and private celebrations executed by Refined Art Solutions.
+                </p>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- 1. Glitter & Glam Couple -->
+                <div class="group relative rounded-3xl overflow-hidden aspect-[3/4] bg-slate-900 border border-slate-800">
+                    <img src="images/mirror-glam-couple.jpg" alt="Glitter & Glam Mirror Experience" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-[10px] uppercase font-bold text-[#D4AF37] tracking-wider">Infinity Mirror Zone</span>
+                        <h4 class="text-base font-bold text-white mt-1">Glitter & Glam Gala Experience</h4>
+                    </div>
+                </div>
+
+                <!-- 2. BOSL Corporate Event -->
+                <div class="group relative rounded-3xl overflow-hidden aspect-[3/4] bg-slate-900 border border-slate-800">
+                    <img src="images/mirror-bosl-nexus.jpg" alt="Bank of Saint Lucia Corporate Nexus Installation" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-[10px] uppercase font-bold text-[#D4AF37] tracking-wider">Corporate Branding</span>
+                        <h4 class="text-base font-bold text-white mt-1">BOSL Nexus Brand Stage</h4>
+                    </div>
+                </div>
+
+                <!-- 3. Photo Booth Station -->
+                <div class="group relative rounded-3xl overflow-hidden aspect-[3/4] bg-slate-900 border border-slate-800">
+                    <img src="images/photobooth-kiosk.jpg" alt="RGB Ring Light Photo Booth Station" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-[10px] uppercase font-bold text-[#D4AF37] tracking-wider">Interactive Station</span>
+                        <h4 class="text-base font-bold text-white mt-1">RGB Halo Photo Booth Stations</h4>
+                    </div>
+                </div>
+
+                <!-- 4. Sovereign Echoes of Helen -->
+                <div class="group relative rounded-3xl overflow-hidden aspect-[3/4] bg-slate-900 border border-slate-800">
+                    <img src="images/mirror-stlucia-patriot.jpg" alt="National Day Sovereign Echoes of Helen Zone" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-[10px] uppercase font-bold text-[#D4AF37] tracking-wider">Theme Reflection Box</span>
+                        <h4 class="text-base font-bold text-white mt-1">Sovereign Echoes of Helen</h4>
+                    </div>
+                </div>
+
+                <!-- 5. LUCELEC Corporate Gala -->
+                <div class="group relative rounded-3xl overflow-hidden aspect-[3/4] bg-slate-900 border border-slate-800">
+                    <img src="images/event-lucelec-gala.jpg" alt="LUCELEC Gala Dining & Balloon Backdrop" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-[10px] uppercase font-bold text-[#D4AF37] tracking-wider">Event Decor</span>
+                        <h4 class="text-base font-bold text-white mt-1">LUCELEC Gala & Dining Styling</h4>
+                    </div>
+                </div>
+
+                <!-- 6. Gros Islet Youth Awards -->
+                <div class="group relative rounded-3xl overflow-hidden aspect-[3/4] bg-slate-900 border border-slate-800">
+                    <img src="images/event-gros-islet-awards.jpg" alt="Gros Islet Youth Awards Balloon Wall" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-[10px] uppercase font-bold text-[#D4AF37] tracking-wider">Awards & Ceremonies</span>
+                        <h4 class="text-base font-bold text-white mt-1">Gros Islet Youth Awards Step & Repeat</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Packages Section -->
+    <section id="pricing" class="py-24 bg-[#0F172A] border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
+                <span class="text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Transparent Options</span>
+                <h2 class="font-luxury text-3xl sm:text-4xl font-bold text-white">Investment Packages</h2>
+                <p class="text-slate-400 text-xs sm:text-sm">Select the experience that fits your event scale. All packages include delivery, setup, and on-site technical coordination.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Package 1 -->
+                <div class="bg-slate-900 rounded-3xl p-8 border border-slate-800 flex flex-col justify-between space-y-6">
+                    <div>
+                        <div class="text-xs uppercase font-bold tracking-wider text-slate-400">Social Celebrations</div>
+                        <h3 class="font-luxury text-2xl font-bold text-white mt-1">The Luxe Booth</h3>
+                        <p class="text-xs text-slate-400 mt-2">Perfect for birthdays, baby showers, and intimate anniversary gatherings.</p>
+                        
+                        <div class="mt-6 pt-6 border-t border-slate-800">
+                            <span class="text-3xl font-extrabold text-[#D4AF37] font-luxury">Starting at XCD $1,200</span>
+                        </div>
+
+                        <ul class="text-xs text-slate-300 space-y-3 mt-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> 3 Hours Interactive Photo Booth</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Custom animated digital frame</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Instant SMS & AirDrop sharing</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Professional booth attendant</li>
+                        </ul>
+                    </div>
+
+                    <a href="#book" class="w-full py-4 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold uppercase tracking-wider text-center rounded-xl transition border border-slate-700">
+                        Select The Luxe Booth
+                    </a>
+                </div>
+
+                <!-- Package 2: Most Popular / Featured -->
+                <div class="bg-gradient-to-b from-slate-900 to-[#131d38] rounded-3xl p-8 border-2 border-[#D4AF37] flex flex-col justify-between space-y-6 relative gold-glow">
+                    <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#D4AF37] text-[#07090E] text-[10px] font-extrabold uppercase tracking-widest px-4 py-1 rounded-full shadow-lg">
+                        Signature VIP Choice
+                    </span>
+
+                    <div>
+                        <div class="text-xs uppercase font-bold tracking-wider text-[#D4AF37]">Immersive Experience</div>
+                        <h3 class="font-luxury text-2xl font-bold text-white mt-1">The Infinity Mirror Portal</h3>
+                        <p class="text-xs text-slate-300 mt-2">Our flagship full-scale reflective photo box with custom branding.</p>
+                        
+                        <div class="mt-6 pt-6 border-t border-slate-800">
+                            <span class="text-3xl font-extrabold text-[#D4AF37] font-luxury">Starting at XCD $2,500</span>
+                        </div>
+
+                        <ul class="text-xs text-slate-200 space-y-3 mt-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Full Enclosed Mirror Photo Zone</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Custom 3D neon sign & balloon styling</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> LED tube lighting & ceiling reflections</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> 4-Hour active event duration</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Dedicated technical support crew</li>
+                        </ul>
+                    </div>
+
+                    <a href="#book" class="w-full py-4 bg-[#D4AF37] hover:bg-[#F59E0B] text-[#07090E] text-xs font-extrabold uppercase tracking-widest text-center rounded-xl shadow-xl transition">
+                        Select Infinity Portal
+                    </a>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="bg-slate-900 rounded-3xl p-8 border border-slate-800 flex flex-col justify-between space-y-6">
+                    <div>
+                        <div class="text-xs uppercase font-bold tracking-wider text-slate-400">Corporate & Galas</div>
+                        <h3 class="font-luxury text-2xl font-bold text-white mt-1">The Brand Takeover</h3>
+                        <p class="text-xs text-slate-400 mt-2">Comprehensive venue styling, custom stage backdrops, and experiential zones.</p>
+                        
+                        <div class="mt-6 pt-6 border-t border-slate-800">
+                            <span class="text-3xl font-extrabold text-[#D4AF37] font-luxury">Custom Proposal</span>
+                        </div>
+
+                        <ul class="text-xs text-slate-300 space-y-3 mt-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Infinity Mirror Zone + Photo Booth Combo</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Step & Repeat or 3D Brand Logo Wall</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Dining table runner & room lighting decor</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#D4AF37]"></i> Complete VIP turnkey setup & breakdown</li>
+                        </ul>
+                    </div>
+
+                    <a href="#book" class="w-full py-4 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold uppercase tracking-wider text-center rounded-xl transition border border-slate-700">
+                        Request Corporate Quote
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Instant Booking Section -->
+    <section id="book" class="py-24 bg-[#07090E] text-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center space-y-3 mb-12">
+                <span class="text-xs uppercase font-bold tracking-widest text-[#D4AF37]">Secure Your Date</span>
+                <h2 class="font-luxury text-3xl sm:text-5xl font-bold">Reserve Refined Art Solutions</h2>
+                <p class="text-slate-400 text-xs sm:text-sm">Submit your booking request below. Our team coordinates directly via WhatsApp & Email to confirm availability and technical requirements.</p>
+            </div>
+
+            <div class="bg-slate-900/90 p-8 sm:p-12 rounded-3xl border border-slate-800 shadow-2xl">
+                <div id="formStatus" class="hidden mb-6 p-4 rounded-xl text-xs font-semibold text-center"></div>
+
+                <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2">Your Name / Organization *</label>
+                            <input type="text" id="custName" required placeholder="e.g. Bank of Saint Lucia / Alicia Joseph" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#D4AF37]">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2">Email Address *</label>
+                            <input type="email" id="custEmail" required placeholder="name@company.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#D4AF37]">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2">Primary Service *</label>
+                            <select id="serviceType" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#D4AF37]">
+                                <option value="Mirror Photo Zone Rental">Mirror Photo Zone Rental (Infinity Box)</option>
+                                <option value="Photo Booth Rental">Interactive Photo Booth Rental</option>
+                                <option value="Event Decor & Styling">Bespoke Event Decor & Styling</option>
+                                <option value="Full VIP Experience Combo">Full VIP Experience Combo (Mirror + Booth + Decor)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2">WhatsApp / Phone Number *</label>
+                            <input type="tel" id="custPhone" required placeholder="+1 (758) 000-0000" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#D4AF37]">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2">Event Date *</label>
+                            <input type="date" id="eventDate" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#D4AF37]">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2">Event Location / Venue</label>
+                            <input type="text" id="eventVenue" placeholder="e.g. Bay Gardens Hotel, Gros Islet" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#D4AF37]">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2">Theme, Colors or Custom Requests</label>
+                        <textarea id="eventNotes" rows="3" placeholder="Tell us about your event theme, color palette, custom logos, or specific requests..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#D4AF37]"></textarea>
+                    </div>
+
+                    <!-- Solid Tactile Button (No Ghost) -->
+                    <button type="submit" id="submitBtn" class="w-full py-4 bg-[#D4AF37] hover:bg-[#F59E0B] text-[#07090E] font-extrabold uppercase tracking-widest text-xs rounded-xl shadow-xl transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Confirm & Open WhatsApp Dispatch</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-[#04060A] border-t border-slate-800/80 pt-16 pb-12 px-6 text-slate-400 text-xs">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pb-12 border-b border-slate-900">
+            <div>
+                <h3 class="font-luxury text-xl font-bold text-white mb-2">Refined Art Solutions</h3>
+                <p class="text-slate-400 leading-relaxed max-w-sm">
+                    Saint Lucia's elite experiential event design agency. Specializing in luxury Mirror Photo Zones, RGB interactive photo booths, and bespoke event styling.
+                </p>
+                <div class="flex items-center gap-4 mt-4">
+                    <a href="https://instagram.com/refinedartsolutions" target="_blank" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-[#D4AF37] transition">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/17584848565" target="_blank" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-emerald-400 transition">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-3">Direct Inquiries</h4>
+                <p><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i> WhatsApp: <a href="https://wa.me/17584848565" class="hover:underline text-white">+1 (758) 484-8565</a></p>
+                <p><i class="fa-brands fa-instagram text-pink-400 mr-2"></i> Instagram: <a href="https://instagram.com/refinedartsolutions" target="_blank" class="hover:underline text-white">@refinedartsolutions</a></p>
+                <p><i class="fa-solid fa-location-dot text-[#D4AF37] mr-2"></i> Service Area: All Saint Lucia</p>
+            </div>
+
+            <div class="space-y-2">
+                <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-3">Core Offerings</h4>
+                <p>• Mirror Photo Zone Rental (Infinity Box)</p>
+                <p>• Interactive Photo Booth Rental</p>
+                <p>• Bespoke Luxury Event & Balloon Decor</p>
+                <p>• Corporate Gala & Brand Activations</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center text-slate-600 gap-4">
+            <p>© 2026 Refined Art Solutions. All Rights Reserved. Saint Lucia.</p>
+            <p>Crafted with Precision</p>
+        </div>
+    </footer>
+
+    <!-- Booking Dispatch Logic -->
+    <script>
+        function handleBookingSubmit(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            const status = document.getElementById('formStatus');
+            
+            btn.disabled = true;
+            btn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Preparing Dispatch...`;
+
+            const name = document.getElementById('custName').value;
+            const email = document.getElementById('custEmail').value;
+            const service = document.getElementById('serviceType').value;
+            const phone = document.getElementById('custPhone').value;
+            const date = document.getElementById('eventDate').value;
+            const venue = document.getElementById('eventVenue').value;
+            const notes = document.getElementById('eventNotes').value;
+
+            const waMsg = `Hello Refined Art Solutions! I would like to reserve a service:%0A%0A` +
+                          `*Client / Org:* ${encodeURIComponent(name)}%0A` +
+                          `*Service:* ${encodeURIComponent(service)}%0A` +
+                          `*Event Date:* ${encodeURIComponent(date)}%0A` +
+                          `*Venue:* ${encodeURIComponent(venue)}%0A` +
+                          `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                          `*Email:* ${encodeURIComponent(email)}%0A` +
+                          `*Details:* ${encodeURIComponent(notes)}`;
+
+            status.className = "mb-6 p-4 rounded-xl text-xs font-semibold text-center bg-emerald-950 border border-emerald-700 text-emerald-200 block";
+            status.innerHTML = `✓ Request formatted! Redirecting to WhatsApp for instant confirmation...`;
+
+            setTimeout(() => {
+                window.open(`https://wa.me/17584848565?text=${waMsg}`, '_blank');
+                btn.disabled = false;
+                btn.innerHTML = `<i class="fa-brands fa-whatsapp text-lg"></i> <span>Confirm & Open WhatsApp Dispatch</span>`;
+            }, 800);
+        }
+    </script>
 </body>
 </html>
